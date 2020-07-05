@@ -4,6 +4,8 @@
  * Author: Ranjit Singh
  * Date: 2020-07-04
  * 
+ * Released under the MIT license
+ * 
  */
 
 (function ($) {

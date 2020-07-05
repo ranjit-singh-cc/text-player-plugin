@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title></title>
+	<link rel="stylesheet" href="../../jquery.codemovie.css" type="text/css"/>
+</head>
+<body>
+<div id="codeMovieContainer">
+	<pre id="codeMovieContent"></pre>
+</div>
+<script type="text/javascript" src="../scripts/jquery.edge.js"></script>
+<script type="text/javascript" src="../../jquery.codemovie.js"></script>
+<script type="text/javascript">
+	var sampleText1 = `static char FindMostFrequentVowel(String str)
+ {
+     /*Write your code here*/
+     int[] vowel=
+ }`;
+	var sampleText2 = `static char FindMostFrequentVowel(String str)
+ {
+     /*Write your code here*/
+     int[] vowelcount=new int[5];
+     for(char c in str){
+         if(c=='')
+     }
+ }`;
+	var sampleText3 = `static char FindMostFrequentVowel(String str)
+ {
+     /*Write your code here*/
+     int[] vowelcount=new int[5]{};
+     for(char c in str){
+         if(c.toLower()=='a')
+             vowelcount[0]
+     }
+ }`;
+	var sampleText4 = `static char FindMostFrequentVowel(String str)
+ {
+     /*Write your code here*/
+     int[] vowelcount=new int[5]{0};
+     for(char c in str){
+         if(c.toLower()=='a')
+             vowelcount[0]++;
+         else if()
+     }
+ }`;
+	var sampleText5 = `static char FindMostFrequentVowel(String str)
+ {
+     /*Write your code here*/
+     int[] vowelcount=new int[5]{0};
+     for(char c in str){
+         if(c.toLower()=='a')
+             vowelcount[0]++;
+         else if(c.toLower()=='a')if()
+     }
+ }`;
+	var sampleText6 = `static char FindMostFrequentVowel(String str)
+ {
+     /*Write your code here*/
+     int[] vowelcount=new int[5]{0};
+     for(char c in str){
+         if(c.toLower()=='a')
+             vowelcount[0]++;
+         else if(c.toLower()=='e')
+             vowelcount[1]++;
+          else if(c.toLower()=='i')
+             vowelcount[2]++;
+          else if(c.toLower()=='o')
+             vowelcount[3]++;
+          else if(c.toLower()=='u')
+             vowelcount[4]++;
+         
+     }
+     for(int )
+ }`;
+	var sampleText7 = `static char FindMostFrequentVowel(String str)
+ {
+     /*Write your code here*/
+     int[] vowelcount=new int[5]{0};
+     for(char c in str){
+         if(c.toLower()=='a')
+             vowelcount[0]++;
+         else if(c.toLower()=='e')
+             vowelcount[1]++;
+          else if(c.toLower()=='i')
+             vowelcount[2]++;
+          else if(c.toLower()=='o')
+             vowelcount[3]++;
+          else if(c.toLower()=='u')
+             vowelcount[4]++;
+         
+     }
+     
+     for(int i=0i<vowelcount.Length;i++){
+         
+     }
+ }`;
+		var codeMovie = $("#codeMovieContainer").codemovie({ height: 500, texts: [sampleText1, sampleText2, sampleText3, sampleText4, sampleText5, sampleText6, sampleText7]});
+	codeMovie.start();
+	
+</script>
+</body>
+</html>
