@@ -1,0 +1,102 @@
+﻿.code-movie-outer-container {
+	position: relative;
+	background-color: #fff;
+}
+
+#codeMovieContent { overflow: auto; }
+
+.code-movie-outer-container:fullscreen #codeMovieContent {
+		height: calc(100% - 50px) !important;
+		width: 100% !important;
+}
+
+.cm-control-container {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 30px;
+	background-color: rgba(43, 51, 63, .7);
+	font-size: 16px;
+}
+
+.cm-control-container .cm-progress {
+	background-color: #73859f;
+	height: 4px;
+	width: 80%;
+	margin-top: 13px;
+	float: left;
+	position: relative;
+	cursor: pointer;
+}
+
+.cm-control-container .cm-progress-position {
+	background-color: #fff;
+	width: 0%;
+	height: 4px;
+}
+
+.cm-left-control, .cm-right-control {
+	float: left;
+	text-align: center;
+	color: #fff;
+	height: 100%;
+}
+
+.cm-left-control { width: 5%; }
+
+.cm-right-control { width: 15%; }
+
+.cm-progress-value {
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #fff;
+	margin-top: -2px;
+	margin-left: -4px;
+	position: absolute;
+}
+
+.cm-button { cursor: pointer; }
+
+.cm-button.play, .cm-button.pause {
+	width: 14px;
+	height: 14px;
+	background-color: transparent;
+	margin-left: 10px;
+}
+
+.cm-button.play {
+	border-width: 7px 0px 7px 14px;
+	border-color: transparent transparent transparent #fff;
+}
+
+.cm-button.pause {
+	border-style: double;
+	border-width: 0px 0px 0px 7px;
+	border-color: #fff;
+}
+
+		.cm-button.replay {
+			display: none;
+		}
+
+		.cm-time-left {
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 0.7em;
+				display: inline-block;
+				vertical-align: middle;
+		}
+
+.cm-button.fullscreen svg { vertical-align: middle; }
+
+.cm-progress-tooltip {
+	background-color: #000;
+	width: 50px;
+	position: absolute;
+	top: -30px;
+	color: #fff;
+	border-radius: 6px;
+	padding: 5px 0;
+	text-align: center;
+	display: none;
+}
