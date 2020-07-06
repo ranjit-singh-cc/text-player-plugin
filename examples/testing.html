@@ -4,11 +4,22 @@
 	<meta charset="utf-8"/>
 	<title></title>
 	<link rel="stylesheet" href="../jquery.codemovie.css" type="text/css"/>
+	<style>
+		body {
+			background-color: #fff;
+			color: #595959;
+			margin: 0 auto auto;
+			width: 960px;
+		}
+	</style>
 </head>
 <body>
+<h1>jquery.codemovie.js - plugin for showing slide show of texts in typing style</h1>
+<h3>Total 7 slides are there and for each slide the time is set to 5 seconds</h3>
 <div id="codeMovieContainer" style="border: 1px solid #e4e4e4">
 	<pre class="codeMovieContent"></pre>
 </div>
+<div style="text-align: right">created by Ranjit Singh</div>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script type="text/javascript" src="../jquery.codemovie.js"></script>
 <script type="text/javascript">
@@ -95,9 +106,9 @@
          
      }
  }`;
-		var codeMovie = $("#codeMovieContainer").codemovie({ height: 500, texts: [sampleText1, sampleText2, sampleText3, sampleText4, sampleText5, sampleText6, sampleText7]});
+	var codeMovie = $("#codeMovieContainer").codemovie({height : 400, width : 960, texts : [sampleText1, sampleText2, sampleText3, sampleText4, sampleText5, sampleText6, sampleText7]});
 	codeMovie.start();
-	
+
 </script>
 </body>
 </html>

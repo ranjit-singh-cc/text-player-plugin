@@ -22,7 +22,7 @@
 .cm-control-container .cm-progress {
 	background-color: #73859f;
 	height: 4px;
-	width: 80%;
+	width: 85%;
 	margin-top: 13px;
 	float: left;
 	position: relative;
@@ -44,7 +44,7 @@
 
 .cm-left-control { width: 5%; }
 
-.cm-right-control { width: 15%; }
+.cm-right-control { width: 10%; }
 
 .cm-progress-value {
 	width: 8px;
