@@ -63,6 +63,10 @@
 	height: 14px;
 	background-color: transparent;
 	margin-left: 10px;
+	margin-top: 7px;
+	outline: 0;
+	outline-style:none;
+	outline-width:0;
 }
 
 .cm-button.play {
