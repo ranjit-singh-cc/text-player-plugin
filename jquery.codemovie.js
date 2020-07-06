@@ -41,7 +41,7 @@
 
         this.init = function () {
             $this.css({"height" : options.height, "width" : options.width}).addClass("code-movie-outer-container").data("initialized." + pluginName, true).append($controlsContainer.clone());
-            $this.find("#codeMovieContent").css({"height" : options.height - $(".cm-control-container").height(), "width" : options.width});
+            $this.find(".codeMovieContent").css({"height" : options.height - $(".cm-control-container").height(), "width" : options.width});
             $(".cm-play-btn").on("click", function () {
                 if($(this).hasClass("pause"))
                     instance.stop();
@@ -111,7 +111,7 @@
                 }
                 updateProgress(index + 2, options.texts.length);
                 if(options.texts.length > index + 1){
-                    getRequiredOperations($this.find("#codeMovieContent")[0].innerText, options.texts[index + 1]);
+                    getRequiredOperations($this.find(".codeMovieContent")[0].innerText, options.texts[index + 1]);
                     writeNextText(options.texts[index + 1]);
                     index++;
                     currentIndex = Math.max(1, index);
@@ -221,7 +221,7 @@
 
         //write text of previous slide
         function writeTexts(text, withoutTimer) {
-            var divContent = $this.find("#codeMovieContent")[0];
+            var divContent = $this.find(".codeMovieContent")[0];
             if(withoutTimer){
                 divContent.innerText = text;
                 return;
@@ -249,7 +249,7 @@
 
         //write edited texts
         function writeNextText(nextText) {
-            var divContent = $this.find("#codeMovieContent")[0];
+            var divContent = $this.find(".codeMovieContent")[0];
             var i = 0;
             var indexAdjust = 0;
             var timeIntervalInMilliSeconds = (options.slideDurationInMilliSeconds - timeBuffer) / operationWithIndex.length;

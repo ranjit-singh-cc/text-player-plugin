@@ -3,9 +3,9 @@
 	background-color: #fff;
 }
 
-#codeMovieContent { overflow: auto; }
+.codeMovieContent { overflow: auto; }
 
-.code-movie-outer-container:fullscreen #codeMovieContent {
+.code-movie-outer-container:fullscreen .codeMovieContent {
 		height: calc(100% - 50px) !important;
 		width: 100% !important;
 }
