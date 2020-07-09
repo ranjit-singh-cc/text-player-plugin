@@ -1,4 +1,4 @@
-# code-movie-plugin
+# text-player-plugin
 
 This is a jquery plugin for showing the video movie from list of texts
 
@@ -8,11 +8,11 @@ This is a jquery plugin for showing the video movie from list of texts
 This plugin will show a video like interface for showing the change from one text to another. 
 For example, if there are 2 texts "this" and "thats", as shown below "i" has been removed and "at" has been added. So you will see two slides one with typing "this" and another with modifying "this" with "thats".
 
-![**](https://ranjit-singh-cc.github.io/code-movie-plugin/examples/pics/diff.png)
+![**](https://ranjit-singh-cc.github.io/text-player-plugin/examples/pics/diff.png)
 
 Levenshtein Distance algorithm has been used to get the change from one text to another.
 
-Live Demo: [Click here to see the demo](https://ranjit-singh-cc.github.io/code-movie-plugin/examples/testing.html)
+Live Demo: [Click here to see the demo](https://ranjit-singh-cc.github.io/text-player-plugin/examples/testing.html)
 
 
 ## Prerequisite
@@ -22,8 +22,8 @@ Live Demo: [Click here to see the demo](https://ranjit-singh-cc.github.io/code-m
 
 ## Resources
 
- - jquery.codemovie.js - responsible for all processing
- - jquery.codemovie.css - responsible for all the UI design
+ - jquery.textplayer.js - responsible for all processing
+ - jquery.textplayer.css - responsible for all the UI design
 
 **Note** - The good part is no external image has been used for UI, only pure CSS and SVG has been used to generate the image. So you don't have to include any file apart from this.
 
@@ -32,16 +32,16 @@ Live Demo: [Click here to see the demo](https://ranjit-singh-cc.github.io/code-m
 
 In html, create a container where you want to bind it
 
-    <div id="codeMovieContainer">
-    	<pre class="codeMovieContent"></pre>
+    <div id="textPlayerContainer">
+    	<pre class="textPlayerContent"></pre>
     </div>
     
-**Please note** - codeMovieContent class is mandatory in the template, all the text will be printed in this particular element. The outer parent container can have any attribute it in.
+**Please note** - textPlayerContent class is mandatory in the template, all the text will be printed in this particular element. The outer parent container can have any attribute it in.
 
-In javascript, just bind the codemovie with your container and pass the array of texts
+In javascript, just bind the textplayer with your container and pass the array of texts
 
-    var codeMovie = $("#codeMovieContainer").codemovie({texts: textArr});
-    codeMovie.start();
+    var textPlayer = $("#textPlayerContainer").textplayer({texts: textArr});
+    textPlayer.start();
 
 
 ## Available options
@@ -55,7 +55,7 @@ In javascript, just bind the codemovie with your container and pass the array of
 
 ## Video controls
 
-![video controls](https://ranjit-singh-cc.github.io/code-movie-plugin/examples/pics/video-controls.png?v=1)
+![video controls](https://ranjit-singh-cc.github.io/text-player-plugin/examples/pics/video-controls.png?v=1)
 
 
  - Play button
