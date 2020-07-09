@@ -10,11 +10,12 @@
 
 (function ($) {
     "use strict";
-    var pluginName = "codemovie";
+    var pluginName = "textplayer";
+    var contentClassName = ".textPlayerContent";
 
-    $.fn.codemovie = function (option) {
+    $.fn.textplayer = function (option) {
         if(this.length > 1){
-            this.each(function () {$(this).codemovie(option);});
+            this.each(function () {$(this).textplayer(option);});
             return this;
         }
 
@@ -41,7 +42,7 @@
 
         this.init = function () {
             $this.css({"height" : options.height, "width" : options.width}).addClass("code-movie-outer-container").data("initialized." + pluginName, true).append($controlsContainer.clone());
-            $this.find(".codeMovieContent").css({"height" : options.height - $(".cm-control-container").height(), "width" : options.width});
+            $this.find(contentClassName).css({"height" : options.height - $(".cm-control-container").height(), "width" : options.width});
             $(".cm-play-btn").on("click", function () {
                 if($(this).hasClass("pause"))
                     instance.stop();
@@ -66,6 +67,7 @@
                     runComparisonAndWrite(hoverIndex - 1, true, true);
                 }
                 else{
+                    $this.trigger(pluginName + ".navigation", hoverIndex - 1);
                     updateProgress(hoverIndex, options.texts.length);
                     writeTexts(options.texts[hoverIndex - 1], true);
                 }
@@ -111,7 +113,8 @@
                 }
                 updateProgress(index + 2, options.texts.length);
                 if(options.texts.length > index + 1){
-                    getRequiredOperations($this.find(".codeMovieContent")[0].innerText, options.texts[index + 1]);
+                    getRequiredOperations($this.find(contentClassName)[0].innerText, options.texts[index + 1]);
+                    $this.trigger(pluginName + ".navigation", index + 1);
                     writeNextText(options.texts[index + 1]);
                     index++;
                     currentIndex = Math.max(1, index);
@@ -124,6 +127,7 @@
             }
 
             if(reset && options.texts.length > index){
+                $this.trigger(pluginName + ".navigation", index);
                 updateProgress(index + 1, options.texts.length);
                 writeTexts(options.texts[index], withoutTimer);
                 comparisonTimeOut = setTimeout(camparisonHandler, options.slideDurationInMilliSeconds);
@@ -221,7 +225,7 @@
 
         //write text of previous slide
         function writeTexts(text, withoutTimer) {
-            var divContent = $this.find(".codeMovieContent")[0];
+            var divContent = $this.find(contentClassName)[0];
             if(withoutTimer){
                 divContent.innerText = text;
                 return;
@@ -249,7 +253,7 @@
 
         //write edited texts
         function writeNextText(nextText) {
-            var divContent = $this.find(".codeMovieContent")[0];
+            var divContent = $this.find(contentClassName)[0];
             var i = 0;
             var indexAdjust = 0;
             var timeIntervalInMilliSeconds = (options.slideDurationInMilliSeconds - timeBuffer) / operationWithIndex.length;
