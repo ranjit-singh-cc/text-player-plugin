@@ -52,6 +52,10 @@ In javascript, just bind the textplayer with your container and pass the array o
     	width: 600 // width of outer container, once text gets filled up then scrollbar will be visible
     }
 
+## Available events
+
+ - textplayer.navigation -> this gets triggered when new text gets printed
+
 
 ## Video controls
 
