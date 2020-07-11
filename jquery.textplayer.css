@@ -6,8 +6,23 @@
 .textPlayerContent { overflow: auto; }
 
 .code-movie-outer-container:fullscreen .textPlayerContent {
-		height: calc(100% - 50px) !important;
-		width: 100% !important;
+	height: calc(100% - 50px) !important;
+	width: 100% !important;
+}
+
+.textPlayerContent .addition {
+	border-right: 2px solid #8b8585;
+	animation: blink 1s;
+	animation-iteration-count: 10;
+}
+
+.code-movie-outer-container.night {
+	background-color: #000 !important;
+	color: #fff !important;
+}
+
+@keyframes blink {
+	50% { border-color: #fff; }
 }
 
 .cm-control-container {
@@ -22,7 +37,7 @@
 .cm-control-container .cm-progress {
 	background-color: #73859f;
 	height: 4px;
-	width: 85%;
+	width: calc(95% - 120px); /*5% is for left control*/
 	margin-top: 13px;
 	float: left;
 	position: relative;
@@ -44,7 +59,7 @@
 
 .cm-left-control { width: 5%; }
 
-.cm-right-control { width: 10%; }
+.cm-right-control { width: 120px; }
 
 .cm-progress-value {
 	width: 8px;
@@ -65,8 +80,8 @@
 	margin-left: 10px;
 	margin-top: 7px;
 	outline: 0;
-	outline-style:none;
-	outline-width:0;
+	outline-style: none;
+	outline-width: 0;
 }
 
 .cm-button.play {
@@ -80,16 +95,14 @@
 	border-color: #fff;
 }
 
-		.cm-button.replay {
-			display: none;
-		}
+.cm-button.replay { display: none; }
 
-		.cm-time-left {
-				font-family: Arial, Helvetica, sans-serif;
-				font-size: 0.7em;
-				display: inline-block;
-				vertical-align: middle;
-		}
+.cm-time-left {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.7em;
+	display: inline-block;
+	vertical-align: middle;
+}
 
 .cm-button.fullscreen svg { vertical-align: middle; }
 
