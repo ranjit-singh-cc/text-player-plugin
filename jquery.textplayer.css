@@ -3,7 +3,12 @@
 	background-color: #fff;
 }
 
-.textPlayerContent { overflow: auto; }
+.textPlayerContent {
+		overflow: auto;
+		font-family: Consolas;
+		margin: 0;
+		scroll-behavior: smooth;
+}
 
 .code-movie-outer-container:fullscreen .textPlayerContent {
 	height: calc(100% - 50px) !important;
@@ -13,7 +18,7 @@
 .textPlayerContent .addition {
 	border-right: 2px solid #8b8585;
 	animation: blink 1s;
-	animation-iteration-count: 10;
+	animation-iteration-count: 100;
 }
 
 .code-movie-outer-container.night {

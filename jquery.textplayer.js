@@ -230,6 +230,7 @@
             var divContent = $this.find(contentClassName)[0];
             if(withoutTimer){
                 divContent.innerText = text;
+                divContent.scrollTop = divContent.scrollHeight;
                 return;
             }
 
@@ -237,6 +238,8 @@
             divContent.innerText = "";
             writeOperationOver = false;
             var timeIntervalInMilliSeconds = (options.slideDurationInMilliSeconds - timeBuffer) / text.length;
+            if(timeIntervalInMilliSeconds > 1000)
+                timeIntervalInMilliSeconds = 1000;
             var writeHandler = function () {
                 writeTextTimer = setTimeout(function () {
                     if(i < text.length){
@@ -255,18 +258,24 @@
 
         //write edited texts
         function writeNextText(nextText) {
-            var divContent = $this.find(contentClassName)[0];
+            var $divContent = $this.find(contentClassName);
+            var divContent = $divContent[0];
             var i = 0;
             var indexAdjust = 0;
             var timeIntervalInMilliSeconds = (options.slideDurationInMilliSeconds - timeBuffer) / operationWithIndex.length;
+            if(timeIntervalInMilliSeconds > 1000)
+                timeIntervalInMilliSeconds = 1000;
             writeOperationOver = false;
+            var contentBound = divContent.getBoundingClientRect();
+            var yStart = contentBound.y;
+            var yEnd = contentBound.y + contentBound.height - 30;
             var writeHandler = function () {
                 writeTextTimer = setTimeout(function () {
                     if(i < operationWithIndex.length){
                         var ji = operationWithIndex[i];
                         var text = divContent.innerText;
                         if(ji.type === OperationTypeEnum.Deletion){
-                            divContent.innerHTML = text.substring(0, ji.index2 - indexAdjust) + text.substring(ji.index2 + 1 - indexAdjust, text.length);
+                            divContent.innerHTML = getDecodedText(text.substring(0, ji.index2 - indexAdjust)) + "<span class=\"addition\"></span>" + getDecodedText(text.substring(ji.index2 + 1 - indexAdjust, text.length));
                             indexAdjust++;
                         }
                         else if(ji.type === OperationTypeEnum.Insertion)
@@ -275,7 +284,11 @@
                             divContent.innerHTML = getDecodedText(text.substring(0, ji.index1))+ "<span class=\"addition\">" + getDecodedText(nextText[ji.index1])+ "</span>" + getDecodedText(text.substring(ji.index1 + 1, text.length));
                         i++;
                         writeHandler();
-                        divContent.scrollTop = divContent.scrollHeight;
+                        var currentCarretBound = $divContent.find(".addition")[0].getBoundingClientRect();
+                        if(currentCarretBound.y < yStart)
+                            divContent.scrollTop = divContent.scrollTop - (yStart-currentCarretBound.y);
+                        else if(currentCarretBound.y >= yEnd)
+                            divContent.scrollTop = divContent.scrollTop + (currentCarretBound.y - yEnd);
                     }
                     else
                         writeOperationOver = true;
