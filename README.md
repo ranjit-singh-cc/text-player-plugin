@@ -5,7 +5,7 @@ This is a jquery plugin for showing the video movie from list of texts
 
 ## Details
 
-This plugin will show a video like interface for showing the change from one text to another. 
+This plugin will show a video like interface for showing the change from one text to another. A smooth scroll has been implemented to focus on the text changes.
 For example, if there are 2 texts "this" and "thats", as shown below "i" has been removed and "at" has been added. So you will see two slides one with typing "this" and another with modifying "this" with "thats".
 
 ![**](https://ranjit-singh-cc.github.io/text-player-plugin/examples/pics/diff.png)
