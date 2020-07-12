@@ -67,6 +67,7 @@ In javascript, just bind the textplayer with your container and pass the array o
  - Replay button
  - Expand to full screen button
  - Exit full screen button
+ - Light and Dark Mode
  - Ribbon to show the progress of video
  - Time left in the format of hh:mm:ss
  - On hover of progress ribbon showing a tooltip gets visible
