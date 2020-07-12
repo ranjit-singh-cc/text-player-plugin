@@ -27,6 +27,7 @@
         var replaySvg = '<svg fill="#fff" height="25" width="25" viewBox="-150 -200 800 800" title="replay"><path d="m512 256c0 68.378906-26.628906 132.667969-74.980469 181.019531-48.351562 48.351563-112.640625 74.980469-181.019531 74.980469s-132.667969-26.628906-181.019531-74.980469c-48.351563-48.351562-74.980469-112.640625-74.980469-181.019531h40c0 119.101562 96.898438 216 216 216s216-96.898438 216-216-96.898438-216-216-216c-77.902344 0-148.230469 41.144531-186.570312 107h60.570312v40h-130v-130h40v61.492188c18.472656-29.011719 42.675781-54.09375 71.480469-73.828126 42.65625-29.21875 92.628906-44.664062 144.519531-44.664062 68.378906 0 132.667969 26.628906 181.019531 74.980469 48.351563 48.351562 74.980469 112.640625 74.980469 181.019531zm-150.027344.566406-169.972656 98.21875v-196.441406zm-129.972656 28.910156 50.027344-28.910156-50.027344-28.910156zm0 0"></path></svg>';
         var dayNightModeSvg = '<svg height="30" viewBox="-20 -100 800 800" width="30" fill="#fff" style="vertical-align:middle"><path d="m142.925781 147.066406c3.925781 3.789063 10.164063 3.738282 14.019531-.121094 3.859376-3.855468 3.910157-10.09375.121094-14.019531l-59.996094-59.996093c-3.925781-3.789063-10.164062-3.738282-14.019531.121093-3.859375 3.855469-3.910156 10.09375-.121093 14.019531zm0 0"/><path d="m100 299.996094c0-5.523438-4.480469-10-10-10h-80c-5.523438 0-10 4.476562-10 10 0 5.523437 4.476562 10 10 10h80c5.519531 0 10-4.476563 10-10zm0 0"/><path d="m142.925781 452.921875-59.996093 60c-2.597657 2.507813-3.644532 6.230469-2.726563 9.726563.914063 3.496093 3.644531 6.226562 7.140625 7.136718 3.496094.917969 7.214844-.125 9.726562-2.722656l59.996094-60c3.789063-3.925781 3.738282-10.160156-.121094-14.019531-3.855468-3.855469-10.09375-3.910157-14.019531-.121094zm0 0"/><path d="m554.492188 353.714844c-18.222657 11.777344-39.605469 17.707031-61.292969 16.996094-65.636719-.867188-118.195313-54.699219-117.496094-120.34375.4375-50.664063 31.484375-96.023438 78.546875-114.777344 3.976562-1.511719 6.5625-5.363282 6.449219-9.609375-.109375-4.25-2.890625-7.964844-6.9375-9.265625-18.78125-5.128906-38.234375-7.394532-57.699219-6.714844-30.042969.03125-59.613281 7.503906-86.066406 21.746094v-121.746094c0-5.523438-4.476563-10-10-10-5.523438 0-10 4.476562-10 10v101.066406c-96.589844 10.292969-169.859375 91.792969-169.859375 188.929688 0 97.136718 73.269531 178.628906 169.859375 188.925781v101.070313c0 5.519531 4.476562 10 10 10 5.523437 0 10-4.480469 10-10v-121.746094c47.402344 25.480468 103.636718 28.734375 153.664062 8.890625 50.023438-19.84375 88.738282-60.765625 105.78125-111.808594 1.394532-4.050781.058594-8.53125-3.320312-11.160156-3.378906-2.621094-8.054688-2.804688-11.628906-.453125zm-414.496094-53.71875c.132812-86.082032 64.527344-158.507813 150-168.71875v337.4375c-85.472656-10.210938-149.867188-82.636719-150-168.71875zm256.066406 169.996094c-30.4375-.007813-60.261719-8.578126-86.066406-24.722657v-290.550781c25.804687-16.148438 55.628906-24.710938 86.066406-24.722656 7.710938 0 15.941406.152344 24.121094.800781-39.847656 26.8125-63.957032 71.515625-64.480469 119.539063-.695313 76.683593 60.8125 139.46875 137.496094 140.347656 15.914062.253906 31.75-2.265625 46.792969-7.453125-27.910157 53.621093-83.480469 87.117187-143.929688 86.761719zm0 0"/><path d="m599.472656 212.667969c-1.195312-3.566407-4.285156-6.15625-8.003906-6.710938l-36.179688-5.539062-16.277343-34.667969c-1.648438-3.511719-5.175781-5.746094-9.050781-5.746094s-7.402344 2.234375-9.050782 5.746094l-16.277344 34.667969-36.179687 5.539062c-3.703125.566407-6.777344 3.15625-7.96875 6.707031-1.191406 3.546876-.296875 7.46875 2.316406 10.148438l26.511719 27.183594-6.269531 38.4375c-.613281 3.777344.984375 7.574218 4.109375 9.78125 3.128906 2.199218 7.238281 2.429687 10.589844.578125l32.25-17.871094 32.25 17.824219c1.476562.820312 3.140624 1.253906 4.828124 1.25 2.9375 0 5.71875-1.289063 7.617188-3.527344 1.90625-2.230469 2.726562-5.1875 2.253906-8.085938l-6.269531-38.386718 26.476563-27.128906c2.632812-2.695313 3.53125-6.636719 2.324218-10.199219zm-46.640625 26.929687c-2.214843 2.269532-3.222656 5.457032-2.707031 8.585938l3.769531 23.101562-19.074219-10.539062c-3.007812-1.660156-6.648437-1.660156-9.65625 0l-19.074218 10.539062 3.769531-23.101562c.515625-3.128906-.492187-6.316406-2.707031-8.585938l-16.40625-16.824218 22.214844-3.398438c3.296874-.5 6.121093-2.609375 7.539062-5.628906l9.492188-20.210938 9.492187 20.210938c1.414063 3.019531 4.242187 5.128906 7.539063 5.628906l22.214843 3.398438zm0 0"/></svg>';
         var $controlsContainer = $("<div class=\"cm-control-container\"><div class=\"cm-left-control\"><button class=\"cm-button cm-play-btn pause\"></button><span class=\"cm-button replay\">"+replaySvg+"</span></div><div class=\"cm-progress\"><span class=\"cm-progress-tooltip\"></span><span class=\"cm-button cm-progress-value\">&nbsp;</span><div class=\"cm-progress-position\"></div></div><div class=\"cm-right-control\"><span class=\"cm-time-left\">-3:09</span>&nbsp;<span class=\"cm-button fullscreen\" title=\"Toggle full screen mode\">" + fullScreenSvg + "</span><span class=\"cm-button day-night-mode\" title=\"Toggle day night mode\">"+dayNightModeSvg+"</span></div></div>");
+        var $changeLog = $("<div class=\"cm-change-log\"></div>")
         var defaults = {version : "1.0.0", slideDurationInMilliSeconds : 5000, texts : [], height : 500, width : 600};
         var options = $.extend({}, defaults, option);
 
@@ -42,51 +43,53 @@
         var writeOperationOver = false;
 
         this.init = function () {
-            $this.css({"height" : options.height, "width" : options.width}).addClass("code-movie-outer-container").data("initialized." + pluginName, true).append($controlsContainer.clone());
-            $this.find(contentClassName).css({"height" : options.height - $(".cm-control-container").height(), "width" : options.width});
-            $(".cm-play-btn").on("click", function () {
+            $this.css({"height" : options.height, "width" : options.width}).addClass("code-movie-outer-container").data("initialized." + pluginName, true).append($controlsContainer.clone()).append($changeLog.clone());
+            $this.find(contentClassName).css({"height" : options.height - $this.find(".cm-control-container").height(), "width" : options.width});
+            $this.find(".cm-play-btn").on("click", function () {
                 if($(this).hasClass("pause"))
                     instance.stop();
                 else{
-                    $(".cm-play-btn").removeClass("play").addClass("pause");
-                    runComparisonAndWrite(currentIndex - 1, false);
+                    $(this).removeClass("play").addClass("pause");
+                    runComparisonAndWrite(currentIndex, false);
                 }
             });
 
             var hoverIndex;
-            $(".cm-progress, .cm-progress-position").mousemove(function (e) {
-                var progressWidth = $(".cm-progress").width();
+            $this.find(".cm-progress, .cm-progress-position").mousemove(function (e) {
+                var progressWidth = $this.find(".cm-progress").width();
                 var left = e.pageX - $(this).offset().left;
                 var percentage = Math.max(0, Math.min(100, left * 100 / progressWidth));
                 hoverIndex = Math.ceil(percentage * options.texts.length / 100);
-                $(".cm-progress-tooltip").show().text(getTime(hoverIndex * options.slideDurationInMilliSeconds / 1000)).css("left", left - 25);
+                $this.find(".cm-progress-tooltip").show().text(getTime(hoverIndex * options.slideDurationInMilliSeconds / 1000)).css("left", left - 25);
             }).on("click", function () {
-                var isRunning = $(".cm-play-btn").hasClass("pause");
+                var isRunning = $this.find(".cm-play-btn").hasClass("pause");
                 if(isRunning){
                     instance.stop();
-                    $(".cm-play-btn").removeClass("play").addClass("pause");
+                    $this.find(".cm-play-btn").removeClass("play").addClass("pause");
                     runComparisonAndWrite(hoverIndex - 1, true, true);
                 }
                 else{
+                    $this.find(".cm-button.replay").hide().end().find(".cm-play-btn").show();
                     $this.trigger(pluginName + ".navigation", hoverIndex - 1);
                     updateProgress(hoverIndex, options.texts.length);
                     writeTexts(options.texts[hoverIndex - 1], true);
+                    currentIndex = hoverIndex - 1;
                 }
             });
-            $(".cm-control-container").mouseout(function () {$(".cm-progress-tooltip").hide();});
-            $(".cm-button.fullscreen").on("click", function () {
+            $this.find(".cm-control-container").mouseout(function () {$this.find(".cm-progress-tooltip").hide();});
+            $this.find(".cm-button.fullscreen").on("click", function () {
                 var isFullScreen = document.fullScreen || document.mozFullScreen || document.webkitIsFullScreen || (document.msFullscreenElement != null);
                 if(isFullScreen)
                     closeFullScreen();
                 else
                     openFullScreen();
             });
-            $(".cm-button.replay").on("click", function () {
-                $(".cm-play-btn").show();
+            $this.find(".cm-button.replay").on("click", function () {
+                $this.find(".cm-play-btn").show();
                 $(this).hide();
                 instance.start();
             });
-            $(".cm-button.day-night-mode").on("click", function () {$(".code-movie-outer-container").toggleClass("night");});
+            $this.find(".cm-button.day-night-mode").on("click", function () {$(".code-movie-outer-container").toggleClass("night");});
             bindFullScreenChange();
         }
 
@@ -94,7 +97,7 @@
             if(!options.texts || options.texts.length == 0)
                 return;
 
-            $(".cm-play-btn").removeClass("play").addClass("pause");
+            $this.find(".cm-play-btn").removeClass("play").addClass("pause");
             runComparisonAndWrite(0, true);
         }
 
@@ -102,7 +105,7 @@
             clearTimeout(comparisonTimeOut);
             clearTimeout(writeTextTimer);
             clearTimeout(nextTextTime);
-            $(".cm-play-btn").removeClass("pause").addClass("play");
+            $this.find(".cm-play-btn").removeClass("pause").addClass("play");
         }
 
         function runComparisonAndWrite(index, reset, withoutTimer) {
@@ -123,8 +126,9 @@
                     comparisonTimeOut = setTimeout(camparisonHandler, options.slideDurationInMilliSeconds);
                 }
                 else{
-                    $(".cm-play-btn").removeClass("pause").addClass("play").hide();
-                    $(".cm-button.replay").show();
+                    $this.find(".cm-play-btn").removeClass("pause").addClass("play").hide();
+                    $this.find(".cm-button.replay").show();
+                    $this.find(".cm-change-log").hide();
                 }
             }
 
@@ -132,7 +136,7 @@
                 $this.trigger(pluginName + ".navigation", index);
                 updateProgress(index + 1, options.texts.length);
                 writeTexts(options.texts[index], withoutTimer);
-                comparisonTimeOut = setTimeout(camparisonHandler, options.slideDurationInMilliSeconds);
+                comparisonTimeOut = setTimeout(camparisonHandler, withoutTimer ? 1000 : options.slideDurationInMilliSeconds);
             }
             else if(options.texts.length > index)
                 camparisonHandler();
@@ -258,6 +262,7 @@
 
         //write edited texts
         function writeNextText(nextText) {
+            $this.find(".cm-change-log").show().text((operationWithIndex.length == 0 ? "no" : operationWithIndex.length) + " difference");
             var $divContent = $this.find(contentClassName);
             var divContent = $divContent[0];
             var i = 0;
@@ -301,10 +306,10 @@
 
         function updateProgress(value, outOf) {
             var percentage = Math.max(0, Math.min(100, (value * 100 / outOf)));
-            $(".cm-control-container").find(".cm-progress-value").css("left", percentage + "%");
-            $(".cm-progress-position").css("width", percentage + "%");
+            $this.find(".cm-control-container").find(".cm-progress-value").css("left", percentage + "%");
+            $this.find(".cm-progress-position").css("width", percentage + "%");
             var totalSeconds = (outOf - value) * options.slideDurationInMilliSeconds / 1000;
-            $(".cm-time-left").text("-" + getTime(totalSeconds));
+            $this.find(".cm-time-left").text("-" + getTime(totalSeconds));
         }
 
         function getTime(totalSeconds) {
@@ -337,7 +342,7 @@
                 fullScreenEnabled = true;
             }
             if(fullScreenEnabled)
-                $(".cm-button.fullscreen").html(exitFullScreenSvg);
+                $this.find(".cm-button.fullscreen").html(exitFullScreenSvg);
         }
 
         function closeFullScreen() {
@@ -361,7 +366,7 @@
                 fullScreenEnabled = true;
             }
             if(fullScreenEnabled)
-                $(".cm-button.fullscreen").html(fullScreenSvg);
+                $this.find(".cm-button.fullscreen").html(fullScreenSvg);
         }
 
         function bindFullScreenChange() {
@@ -369,7 +374,7 @@
                 var isFullScreen = document.fullScreen || document.mozFullScreen || document.webkitIsFullScreen || (document.msFullscreenElement != null);
 
                 console.log(isFullScreen);
-                $(".cm-button.fullscreen").html(isFullScreen ? exitFullScreenSvg : fullScreenSvg);
+                $this.find(".cm-button.fullscreen").html(isFullScreen ? exitFullScreenSvg : fullScreenSvg);
             });
         }
 

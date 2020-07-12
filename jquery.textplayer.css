@@ -30,6 +30,20 @@
 	50% { border-color: #fff; }
 }
 
+.cm-change-log {
+		position: absolute;
+		bottom: 30px;
+		right: 20px;
+		animation: blinkanimate 2s;
+		animation-iteration-count: 100;
+}
+
+@keyframes blinkanimate {
+		50% {
+				color: #fff;
+		}
+}
+
 .cm-control-container {
 	position: absolute;
 	bottom: 0;
